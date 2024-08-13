@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #F7DC6F; /* Amarelo */
+  background-color:#A7DFDF; /* Azul */
   margin: 0;
   padding: 0;
 }
@@ -61,7 +61,7 @@ li {
 
 
 .testemunhos {
-  background-color: #F7DC6F; 
+  background-color: #A7DFDF; 
   padding: 20px;
   border: 1px solid #CCCCCC;
   margin-bottom: 20px;
