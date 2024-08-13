@@ -30,12 +30,12 @@ header nav a{
 }
 
 a.active{
-    background: #14ff72cb;
+    background: #ffd900cb;
     border-radius: 2px;
 }
 
 a:hover{
-    background: #14ff72cb;
+    background: #ffd900cb;
     border-radius: 2px;
 }
 
@@ -121,7 +121,7 @@ a:hover{
 .content .title{
     font-size: 100px;
     text-transform: uppercase;
-    color: #14ff72cb;
+    color: #ffbd07cb;
     font-weight: bold;
     line-height: 1;
 
@@ -171,15 +171,15 @@ a:hover{
 
 .content .btn button:nth-child(2){
     background: transparent;
-    color: #14ff72cb;
+    color: #fcc100cb;
     border: 2px solid #fff;
     transition: 0.3s;
 }
 
 .content .btn button:nth-child(2):hover{
-    background-color: #14ff72cb;
+    background-color: #ffd900cb;
     color: #fff;
-    border-color: #14ff72cb;
+    border-color: #ffc400cb;
 }
 
 
@@ -223,7 +223,7 @@ a:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #14ff72cb;
+    background-color: #fdcf00cb;
     color: #fff;
     border: none;
     outline: none;
@@ -246,7 +246,7 @@ a:hover{
     z-index: 1000;
     width: 0%;
     height: 4px;
-    background-color: #14ff72cb;
+    background-color: #ffee00cb;
     left: 0;
     top: 0;
     animation: runningTime 7s linear 1 forwards;

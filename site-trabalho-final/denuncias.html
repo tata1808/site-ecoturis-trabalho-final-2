@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias de Maus-Tratos e Animais em Perigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Denúncias de Maus-Tratos e Animais em Perigo</h1>
+        <p>Se você testemunhou ou tem conhecimento de um caso de maus-tratos, abandono ou animal em situação de risco, por favor, denuncie abaixo.</p>
+        <form>
+            <div class="form-group">
+                <label for="localizacao">Localização do caso:</label>
+                <input type="text" id="localizacao" class="form-control" placeholder="Rua, Bairro, Cidade, Estado">
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição do caso:</label>
+                <textarea id="descricao" class="form-control" placeholder="Descreva o caso em detalhes"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fotos">Fotos ou vídeos:</label>
+                <input type="file" id="fotos" class="form-control" multiple>
+            </div>
+            <div class="form-group">
+                <label for="contato">Seu contato (opcional):</label>
+                <input type="text" id="contato" class="form-control" placeholder="Nome, email ou telefone">
+            </div>
+            <button class="btn">Enviar Denúncia</button>
+        </form>
+        <p>Após enviar a denúncia, nossa equipe de resgate irá avaliar e atender ao caso o mais rápido possível.</p>
+    </div>
+
+    
+<button id="send-denuncia">Enviar Denúncia</button>
+
+
+<div id="denuncia-sent-popup" class="popup">
+  <div class="popup-content">
+    <h2>Denúncia enviada com sucesso!</h2>
+    <p>Sua denúncia foi enviada com sucesso. Obrigado por contribuir para uma comunidade mais segura.</p>
+    <button id="close-popup">Fechar</button>
+  </div>
+</div>
+</body>
+</html>
