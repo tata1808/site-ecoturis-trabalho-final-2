@@ -4,44 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denúncias de Maus-Tratos e Animais em Perigo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="denuncias.css">
 </head>
 <body>
     <div class="container">
-        <h1>Denúncias de Maus-Tratos e Animais em Perigo</h1>
-        <p>Se você testemunhou ou tem conhecimento de um caso de maus-tratos, abandono ou animal em situação de risco, por favor, denuncie abaixo.</p>
-        <form>
-            <div class="form-group">
-                <label for="localizacao">Localização do caso:</label>
-                <input type="text" id="localizacao" class="form-control" placeholder="Rua, Bairro, Cidade, Estado">
+        <div id="gestao-voluntarios" class="section">
+            <h2>Gestão de Voluntários</h2>
+            <p>Cadastre e organize os voluntários, atribua tarefas e acompanhe suas atividades.</p>
+        </div>
+
+        <div id="gestao-resgates" class="section">
+            <h2>Gestão de Resgates</h2>
+            <div class="form-container">
+                <h3>Registrar Novo Resgate</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nome-denunciante">Nome do Denunciante:</label>
+                        <input type="text" id="nome-denunciante" name="nome-denunciante" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contato-denunciante">Contato do Denunciante:</label>
+                        <input type="text" id="contato-denunciante" name="contato-denunciante" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco-resgate">Endereço do Resgate:</label>
+                        <input type="text" id="endereco-resgate" name="endereco-resgate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo-animal">Tipo de Animal:</label>
+                        <input type="text" id="tipo-animal" name="tipo-animal" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao-situacao">Descrição da Situação:</label>
+                        <textarea id="descricao-situacao" name="descricao-situacao" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status-resgate">Status do Resgate:</label>
+                        <select id="status-resgate" name="status-resgate" required>
+                            <option value="pendente">Pendente</option>
+                            <option value="em andamento">Em Andamento</option>
+                            <option value="concluido">Concluído</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Registrar Resgate</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="descricao">Descrição do caso:</label>
-                <textarea id="descricao" class="form-control" placeholder="Descreva o caso em detalhes"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="fotos">Fotos ou vídeos:</label>
-                <input type="file" id="fotos" class="form-control" multiple>
-            </div>
-            <div class="form-group">
-                <label for="contato">Seu contato (opcional):</label>
-                <input type="text" id="contato" class="form-control" placeholder="Nome, email ou telefone">
-            </div>
-            <button class="btn">Enviar Denúncia</button>
-        </form>
-        <p>Após enviar a denúncia, nossa equipe de resgate irá avaliar e atender ao caso o mais rápido possível.</p>
+        </div>
     </div>
-
-    
-<button id="send-denuncia">Enviar Denúncia</button>
-
-
-<div id="denuncia-sent-popup" class="popup">
-  <div class="popup-content">
-    <h2>Denúncia enviada com sucesso!</h2>
-    <p>Sua denúncia foi enviada com sucesso. Obrigado por contribuir para uma comunidade mais segura.</p>
-    <button id="close-popup">Fechar</button>
-  </div>
-</div>
 </body>
 </html>
